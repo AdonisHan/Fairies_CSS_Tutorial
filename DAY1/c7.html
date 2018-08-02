@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+#m1{
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	position: relative; /* 박스기준으로 위치잡기 */
+	overflow: hidden; 
+	/* hidden : 넘으면 지워버려
+	scroll;스크롤 // auto :자동으로 */
+	}
+#m1 > div{
+	opacity:0.5; /* 투명도 */
+	}
+#d1{
+	position:absolute; /*좌표기준 */
+	left:30px;
+	top:30px;
+	
+	width:180px;
+	height:180px;
+	background:red;
+	z-index: 1;
+}
+#d2{
+	position:absolute; /*좌표기준 */
+	left:80px;
+	top:80px;
+	width:180px;
+	height:180px;
+	background:green;
+	}
+#d3{
+	position:absolute; /*좌표기준 */
+	left:100px;
+	top:100px;
+
+	width:180px;
+	height:180px;
+	background:blue;
+	z-index: 5;
+	}
+</style>
+</head>
+<body>
+<h1>POSITION TEST</h1>
+<div id="m1">
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+</div>
+</body>
+</html>
